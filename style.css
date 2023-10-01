@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Gabarito:wght@600;700;800&family=Mooli&family=Noto+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy', 'Gabarito';
+  font-weight: 900;
+  /* color: azure; */
+}
+
+body,html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.container,
+.add-todo {
+  margin-top: 20px;
+}
+
+.header {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  border-bottom: 2px solid white;
+  
+}
+
+.add-todo {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.container input {
+  width: 30vw;
+  padding: 10px 20px 10px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+}
+
+.add {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #f82db1;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.add:hover {
+  background-color: #d6299a;
+}
+
+.add:active {
+  transform: scale(0.95);
+}
+
+.todos {
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+  margin-top: 20px;
+  padding: 10px;
+  gap: 20vw;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: rgb(191, 91, 191);
+}
+
+.todo-btns {
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.todo-btns button {
+  border: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.doneBtn,
+.delBtn {
+  background-color: #ef8a32;
+}
+
+.doneBtn:hover,
+.delBtn:hover {
+  background-color: #fbaa63;
+}
+
+.doneBtn:active,
+.delBtn:active {
+  transform: scale(0.95);
+}
+
+.done {
+  text-decoration: line-through;
+}
